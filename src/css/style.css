@@ -1,18 +1,64 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 :root{
-    --color-principal:	#f0d7a7
-    --color-secundario: #c37960
-    --color-terciario: #894e3f
+    --color-principal:	#f0d7a7;
+    --color-secundario: #c37960;
+    --color-terciario: #894e3f;
 
 }
 
 *{
     box-sizing: border-box;
-    font-family: "Inconsolata", monospace;
     margin: 0px;
 }
 
 .body{
-
+    font-family: "Inconsolata", monospace;
+    font-weight: 450;
+    font-style: normal;
+    background-color: var(--color-terciario);
 }
+
+.nav{
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__logo{
+    width: 150px;
+    height: 150px;
+}
+
+.container__titulo{
+    color: var(--color-terciario);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.container__lista{
+    display: flex;
+    list-style: none;
+    margin: 60px;
+    gap: 60px;
+    color: var(--color-terciario);
+    font-size: 2rem;
+}
+
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 17vh;
+}
+
