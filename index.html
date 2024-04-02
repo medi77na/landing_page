@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ven y prueba los deliciosos productos de La Panadería, tradicionales y únicos en la ciudad. " />
+    <meta name="keywords"
+        content="Pan, Parva, Pasteles, Palos de queso, Cafetería, Panadería, Tradición, Pedidos, David, Medina, Urrego,medi77na">
+    <meta name="sitedomain" content="https://example.com/" />
+    <meta name="organization" content="riwi" />
+    <meta name="author" content="David Steven Medina Urrego" />
+    <meta name="designer" content="David Steven Medina Urrego" />
+    <meta name="copyright" content="© 2024 Riwi Cine. Todos los derechos reservados">
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Home</title>
 </head>
-<body>
-    <header>
 
+<body class="body">
+    <header>
+        <nav>
+            <div>
+                <figure>
+                    <img src="./public/img/logo.webp" alt="Logo de la Panadería">
+                </figure>
+                <h1>La Panadería</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>Nosotros</li>
+                    <li>Contáctanos</li>
+                    <li>¿Dónde estamos?</li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
+        <section class="nosotros">
+            <article>
+                <h2>Nosotros:</h2>
+                <p>En "La Panadería", llevamos más de una década endulzando los días de nuestros vecinos en Bello,
+                    Antioquia. Desde nuestros inicios, hemos sido un emblema de la tradición familiar, donde cada receta
+                    se ha transmitido de generación en generación con el mismo amor y dedicación. Nuestros clientes, que
+                    ya son parte de nuestra gran familia, quedan encantados con cada visita, saboreando el pan
+                    tradicional que sale del horno fresco y crujiente, evocando los sabores auténticos de la región. Nos
+                    enorgullece ser un punto de encuentro donde las historias y las sonrisas se comparten alrededor de
+                    un buen café y el mejor pan, elaborado con ingredientes de la más alta calidad y una pizca de
+                    nostalgia por lo auténtico. No solo horneamos pan, sino que cultivamos comunidad y perpetuamos la
+                    herencia de un arte que es el corazón de nuestra identidad cultural.</p>
+            </article>
+            <article>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SAPCu0U5TNE?si=a733c1nyIrhRbimt"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+        </section>
+        <section class="contacto">
+            <form class="" action="#">
+                <h2>Contacto</h2>
+                <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
 
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje aquí:"></textarea>
+
+                <button><a href="https://www.cinecolombia.com/medellin" target="_blank">Enviar</a></button>
+
+            </form>
+        </section>
+        <section class="donde-estamos">
+            <h2>¿Dónde estamos?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.15188302555507!2d-75.55210255128922!3d6.339357959272329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fa296e10733%3A0xee819e41879f0e94!2sLa%20Panader%C3%ADa!5e0!3m2!1ses!2sco!4v1712061904643!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
-        
+        <div>
+            <i class="bi bi-c-circle"></i> 2024 La Panadería. Todos los derechos reservados
+        </div>
+        <div>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+        </div>
     </footer>
 </body>
+
 </html>
