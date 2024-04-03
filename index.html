@@ -28,7 +28,7 @@
                 <figure>
                     <img class="container__logo" src="./public/img/logo.webp" alt="Logo de la Panadería">
                 </figure>
-                <h1 class="container__titulo" >La Panadería</h1>
+                <h1 class="container__titulo">La Panadería</h1>
             </div>
             <div class="container">
                 <ul class="container__lista">
@@ -42,9 +42,10 @@
 
     <main>
         <section class="section">
-            <article>
-                <h2>Nosotros:</h2>
-                <p>En "La Panadería", llevamos más de una década endulzando los días de nuestros vecinos en Bello,
+            <article class="article article--texto">
+                <h2 class="article__titulo-nosotros">Nosotros</h2>
+                <p class="parrafo-nosotros">En "La Panadería", llevamos más de una década endulzando los días de
+                    nuestros vecinos en Bello,
                     Antioquia. Desde nuestros inicios, hemos sido un emblema de la tradición familiar, donde cada receta
                     se ha transmitido de generación en generación con el mismo amor y dedicación. Nuestros clientes, que
                     ya son parte de nuestra gran familia, quedan encantados con cada visita, saboreando el pan
@@ -54,30 +55,36 @@
                     nostalgia por lo auténtico. No solo horneamos pan, sino que cultivamos comunidad y perpetuamos la
                     herencia de un arte que es el corazón de nuestra identidad cultural.</p>
             </article>
-            <article>
+            <article class="article">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/SAPCu0U5TNE?si=a733c1nyIrhRbimt"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </article>
         </section>
-        <section class="section">
-            <form class="" action="#">
-                <h2>Contacto</h2>
-                <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p><br>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <section class="section section--contacto">
+            <form class="form" action="#">
+                <div class="form__inputs">
+                    <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
 
-                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                    <input class="form__input" type="email" name="email" id="email" placeholder="Correo electrónico" required>
 
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje aquí:"></textarea>
+                    <textarea class="form__input"  name="mensaje" id="mensaje" cols="30" rows="10"
+                        placeholder="Deja tu mensaje aquí:"></textarea>
 
-                <button><a href="https://www.cinecolombia.com/medellin" target="_blank">Enviar</a></button>
-
+                    <button class="form__button"><a href="#" target="_blank">Enviar</a></button>
+                </div>
+                <div class="form__encabezado">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p><br>
+                </div>
             </form>
         </section>
-        <section class="section">
-            <h2>¿Dónde estamos?</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.15188302555507!2d-75.55210255128922!3d6.339357959272329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fa296e10733%3A0xee819e41879f0e94!2sLa%20Panader%C3%ADa!5e0!3m2!1ses!2sco!4v1712061904643!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="section section--donde-estamos">
+            <h2 class="section__titulo-ubicacion">¿Dónde estamos ubicados?</h2>
+            <iframe class="section__mapa-ubicacion"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.15188302555507!2d-75.55210255128922!3d6.339357959272329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fa296e10733%3A0xee819e41879f0e94!2sLa%20Panader%C3%ADa!5e0!3m2!1ses!2sco!4v1712061904643!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
