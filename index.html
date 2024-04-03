@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,7 @@
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Home</title>
 </head>
 
@@ -32,16 +33,16 @@
             </div>
             <div class="container">
                 <ul class="container__lista">
-                    <li class="container__item">Nosotros</li>
-                    <li class="container__item">Contáctanos</li>
-                    <li class="container__item">¿Dónde estamos?</li>
+                    <li class="container__item"><a href="#nosotros" class="container__item" >Nosotros</a></li>
+                    <li class="container__item"><a href="#contacto" class="container__item" >Contáctanos</a></li>
+                    <li class="container__item"><a href="#ubicacion" class="container__item" >¿Dónde estamos?</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="section section--nosotros">
+        <section class="section section--nosotros" id="nosotros">
             <article class="article article--texto">
                 <h2 class="article__titulo-nosotros">Nosotros</h2>
                 <p class="parrafo-nosotros">En "La Panadería", llevamos más de una década endulzando los días de
@@ -62,7 +63,8 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </article>
         </section>
-        <section class="section section--contacto">
+
+        <section class="section section--contacto" id="contacto">
             <form class="form" action="#">
                 <div class="form__inputs">
                     <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
@@ -72,7 +74,7 @@
                     <textarea class="form__input"  name="mensaje" id="mensaje" cols="30" rows="10"
                         placeholder="Deja tu mensaje aquí:"></textarea>
 
-                    <button class="form__button"><a href="#" target="_blank">Enviar</a></button>
+                    <button class="form__button"><a class="form__button" href="#" target="_blank">Enviar</a></button>
                 </div>
                 <div class="form__encabezado">
                     <h2>Contacto</h2>
@@ -80,7 +82,8 @@
                 </div>
             </form>
         </section>
-        <section class="section section--donde-estamos">
+
+        <section class="section section--donde-estamos" id="ubicacion">
             <h2 class="section__titulo-ubicacion">¿Dónde estamos ubicados?</h2>
             <iframe class="section__mapa-ubicacion"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.15188302555507!2d-75.55210255128922!3d6.339357959272329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fa296e10733%3A0xee819e41879f0e94!2sLa%20Panader%C3%ADa!5e0!3m2!1ses!2sco!4v1712061904643!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"
@@ -88,11 +91,11 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="section footer">
         <div>
             <i class="bi bi-c-circle"></i> 2024 La Panadería. Todos los derechos reservados
         </div>
-        <div>
+        <div class="footer__icons">
             <i class="bi bi-instagram"></i>
             <i class="bi bi-facebook"></i>
             <i class="bi bi-whatsapp"></i>
