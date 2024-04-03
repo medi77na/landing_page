@@ -65,8 +65,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 17vh;
+    padding: 20vh 0vh;
 }
+
 
 .article{
     display: flex;
@@ -87,16 +88,13 @@
 }
 
 .section--contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style: dashed;
+    border: 10px 10px solid  var(--color-terciario);
     background-color: var(--color-principal);
 }
 
 .form{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: var(--color-principal);
     width: 100%;
     display: flex;
@@ -130,8 +128,8 @@
 
 .form__input:focus { 
     outline: none;
-    border:  50px solid #719ECE;
-    box-shadow: 0 0 10px #719ECE;
+    border:  2px solid var(--color-terciario);
+    box-shadow: 0 0 15px var(--color-terciario);
 }
 
 .form__button{
